@@ -1,0 +1,66 @@
+10.10.18
+- update style.css
+- update bundle.js
+- update units.html & units-detail.html
+  - di bagian "Available in all rooms" versi mobile jadi slider (units.html & units-detail.html)
+  - di units detail update html ".page-hero"
+- di index.html tambah "popup facility", html nya ada di bawah sebelum footer
+  - di .section-grid-slider >> .slides >> .slide >> .link tambahkan class "js-popup-link" dan href tambahkan id popup
+- di location.html tambah "popup-top-sight", html nya ada di bawah sebelum footer
+- di side menu project.html & investemnt.plan, tambah html ".sidebar-selected"
+- di contact.html "inquiry form", html nya ada di bawah sebelum footer
+  - untuk toggle inquiry form, tambahkan class "toggle-inquiry" di pada link "Inquiry Form" yg ada di section paling
+    bawah halaman contact.html
+- project-status.html, tambahkan html ".event-slider-nav.mobile", letakan di dalam .event-slider di bawah .slides
+- update dist/assets/images (semua)
+
+12.10.18
+- update style.css
+- update bundle.js
+- update index.html, search "grid-connection"
+- update uploads/facility-hover.jpg
+- tambah class ".js-scene" di:
+  - .section.units (index.html)
+  - .section.investment (index.html)
+  - .section.about (location.html)
+  - .section.investment (location.html)
+  - setiap .units-item (units.html)
+  - .section.project-site (project-status.html)
+  - .section sebelum .section.inquiry & .section.inquiry (contact.html)
+
+17.10.18
+- update style.css
+- update 404.html
+- replace class facilities>>facility jadi specifications>>specification
+
+23.10.18
+- update style.css
+- update bundle.js
+- tambah #main-page-focus di sebelum .page-breadcrumb di halaman:
+  - project-*.html kecuali project-status.html
+  - investment-*.html
+  - di side menu tiap url tambah "#main-page-focus" di akhir
+- ubah class "mfp-close mfp-close-show" ke "mfp-custom-close" di semua html popup
+- tambah html popup di halaman project-status.html, #popup-project-status.
+  - ubah element div menjadi "a" di class "event-slide-container", tambah href "#popup-project-status" dan class "js-popup-link"
+- ubah html section slider (contoh: di halaman index.html class "section units") di halaman index.html, location.html, contact.html, project-status.html,
+  replace dengan html slider yg baru ".section-slider"
+- ubah html section image (contoh: di halaman index.html class "section investment") di halaman index.html, location.html, contact.html, units-detail.html
+  replace dengan html ".section-image"
+- update html google map di halaman location.html dan contact.html
+- update html di halaman location.html, class "section section-image tourism-statistic"
+- contoh icon menggunakan .png ada di halaman units.html di specification dan "Available in all rooms"
+- update html "#head-list-dropdown" dan "#mnsry_container" di halaman project-gallery
+
+23.10.18 II
+- update style.css
+- update google-map di halaman contact.html dan location
+- update file icon-hamburger.svg
+
+05.03.19
+- update style.css
+- update logo header dan footer, tambah "A Development by Genesis Indojaya" di bawahnya
+
+06.03.19
+- update style.css
+- update ganti logo "citadines-logo-2.svg"

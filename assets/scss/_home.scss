@@ -1,0 +1,326 @@
+.home-page-container {
+
+  @at-root {
+    .home-slider {
+      position: relative;
+
+      .flickity-slider {
+        transform: none !important;
+      }
+      
+      .slides {
+        .slide {
+          float: left;
+          width: 100%;
+          left: 0 !important;
+          opacity: 0;
+          transition: all  1s ease-in-out;
+
+          .slide-image {
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 35%;
+              background-image: linear-gradient(to top, rgba($white, 1), rgba($white, 0));
+            }
+
+            img {
+              width: 100%;
+              max-height: 720px;
+              min-height: 440px;
+              object-fit:cover;
+            }
+          }
+
+          .slide-title {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 0;
+            padding: 0 24px;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+
+            .title {
+              max-width: 680px;
+              margin: 0 auto;
+            }
+          }
+
+          &.is-selected {
+            opacity: 1;
+
+            .slide-title {
+              bottom: 24px;
+              opacity: 1;
+
+              @include breakpoint(runner) {
+                bottom: 64px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .home-unit-slider {
+      width: 45%;
+      margin-right: auto;
+      position: relative;
+      padding-bottom: 80px;
+  
+      .flickity-slider {
+        transform: none !important;
+      }
+  
+      .slides {
+        .slide {
+          width: 100%;
+          left: 0 !important;
+          opacity: 0;
+          transition: all  1s ease-in-out;
+  
+          &.is-selected {
+            opacity: 1;
+          }
+        }
+      }
+  
+      .home-unit-slider-nav {
+        position: absolute;
+        bottom: 48px;
+        right: -45px;
+        padding-bottom: 80px;
+  
+        .left, .right {
+          display: block;
+          float: left;
+          width: 45px;
+          height: 45px;
+          padding: 4px;
+          font-size: 22px;
+          text-align: center;
+        }
+  
+        .left {
+          border: 2px solid $white;
+          border-right: none;
+          padding-right: 0;
+          color: $white;
+        }
+  
+        .right {
+          border: 2px solid $color-one-500;
+          border-left: none;
+          padding-left: 0;
+        }
+      }
+    }
+
+    .home-facilities-slider {
+      padding-top: 32px;
+      max-width: 1112px;
+      margin: 0 auto;
+      padding-left: 24px;
+      padding-right: 24px;
+      
+      .flickity-prev-next-button {
+        background: none;
+        height: 32px;
+        width: 32px;
+
+        .arrow {
+          fill: $color-one-500;
+        }
+
+        &.previous {
+          left: -24px;
+        }
+        &.next {
+          right: -24px;
+        }
+      }
+
+      @include breakpoint(walker) {
+        padding-left: 48px;
+        padding-right: 48px;
+
+        .flickity-prev-next-button {
+          height: 40px;
+          width: 40px;
+
+          &.previous {
+            left: -48px;
+          }
+          &.next {
+            right: -48px;
+          }
+        }
+      }
+
+      @include breakpoint(jumper) {
+        padding-left: 64px;
+        padding-right: 64px;
+
+        .flickity-prev-next-button {
+          &.previous {
+            left: -64px;
+          }
+          &.next {
+            right: -64px;
+          }
+        }
+      }
+      
+      .slides {
+        display: block;
+        margin: -12px;
+
+        &::after {
+          content: "";
+          display: table;
+          width: 100%;
+          clear: both;
+        }
+
+        .slide {
+          width: 33.333333333%;
+          display: block;
+          float: left;
+          padding: 12px;
+          position: relative;
+
+          .link {
+            display: block;
+            position: relative;
+
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              background: rgba($black, 0.2);
+              z-index: 7;
+              transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+              &::after {
+                background: rgba($black, 0);
+              }
+            }
+          }
+
+          .title {
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 8;
+            color: $white;
+            padding: 24px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 14px;
+
+            &::before {
+              content: "";
+              display: block;
+              max-width: 180px;
+              border-top: 1px solid $white;
+              padding-bottom: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .unit-quotes {
+			&::after {
+				content: "";
+				display: table;
+				width: 100%;
+				clear: both;
+			}
+
+			.quotes-content {
+				.section-content {
+					padding-left: 0;
+				}
+      }
+		}
+
+    .section {
+      &.overview {
+        .overview-container {
+
+          @include breakpoint(walker) {
+            padding-left: 100px;
+          }
+        }
+
+        .section-content {
+
+          @include breakpoint(walker) {
+            padding-left: 48px;
+          }
+        }
+
+        .link-more {
+          text-align: center;
+
+          @include breakpoint(crawler) {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .flickity-page-dots {
+      display: block;
+      bottom: -24px;
+
+      @include breakpoint(crawler) {
+        bottom: -28px;
+      }
+
+      @include breakpoint(runner) {
+        bottom: 12px;
+      }
+
+      .dot {
+        background: #888;
+        opacity: 0.3;
+      }
+    }
+  }
+
+}
+
+.investment, .inquiry {
+  .wrapper {
+    &.outer-wrapper {
+      padding-right: 0;
+
+      @media screen and (min-width: 800px) {
+        padding-right: 48px;
+      }
+    }
+  }
+}
+
+.section {
+  &.facilities {
+    .section-content {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.location-map {
+  iframe {
+    width: 100%;
+    height: 340px;
+  }
+}
+
+.attraction {
+  padding-top: 32px;
+
+  @include breakpoint(walker) {
+    padding-left: 48px;
+  }
+
+  @at-root {
+    .heading {
+      font-family: 'Work Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    .attraction-list {
+      display: block;
+      margin: -12px -12px -12px -8px;
+
+      .attraction-item {
+        display: inline-table;
+        padding: 12px;
+        margin-left: -4px;        
+        align-items: center;
+        width: 100%;
+
+        @include breakpoint(walker) {
+          width: 50%;
+        }
+
+        .image {
+          display: table-cell;
+          width: 120px;
+        }
+
+        .meta {
+          display: table-cell;
+          padding-left: 24px;
+          align-items: center;
+
+
+          .title {
+            width: 100%;
+            margin-bottom: 8px;
+            font-size: 18px;
+          }
+
+          .distance {
+            color: $color-text-light;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

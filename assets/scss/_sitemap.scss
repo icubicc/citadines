@@ -1,0 +1,54 @@
+.sitemap-content {
+  background-color: #F1EFED;
+
+  .sitemap {
+    padding: 48px 0 0;
+
+    @include breakpoint(walker) {
+      padding: 64px 0 16px;
+    }
+
+    @include breakpoint(runner) {
+      padding: 64px 0 16px 100px;
+    }
+
+    .sitemap-heading {
+      margin-bottom: 38px;
+    }
+
+    .sitemap-list {
+      padding-left: 32px;
+
+      @include breakpoint(walker) {
+        display: flex;
+      }
+
+      @include breakpoint(runner) {
+        padding-left: 52px;
+      }
+
+      .list {
+        width: 100%;
+
+        @include breakpoint(walker) {
+          width: 50%;
+        }
+
+        .list {
+          width: 100%;
+          padding-left: 24px;
+          padding-top: 16px;
+        }
+
+        .item {
+          margin-bottom: 16px;
+
+          .link {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+  }
+}

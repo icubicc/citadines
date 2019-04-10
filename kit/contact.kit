@@ -1,0 +1,243 @@
+<!-- @import variables -->
+<!-- $contact-nav: menu-item current-menu-item -->
+<!-- @import header -->
+
+<div class="page-hero">
+  <div class="page-hero-image">
+      <div class="wrapper">
+        <img src="uploads/hero-contact.jpg">
+      </div>
+  </div>
+  <div class="page-hero-title">
+      <div class="wrapper">
+        <div class="hero-title">
+          <div class="hero-title-container">
+            <h1 class="title">We'd love to hear from you</h1>
+            <p class="subtitle">Sed nunc dolor, ullamcorper vitae justo vel, sodales condimentum magna.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="page-breadcrumb">
+  <div class="wrapper">
+    <div class="breadcrumb"><a href="#" class="a">Home</a><span class="a">Sales Info & Contact</span></div>
+  </div>
+</div>
+
+<div id="site-content" class="site-content">
+    <div class="inner inner-zero">
+
+        <div class="main-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+          <div class="contact-page-container">
+
+            <div class="section contact-map zero-top">
+
+							<div class="google-map">
+								<div id="map" style="height: 400px;"></div>
+
+								<script>
+									var map;
+									var myLatLng = {lat: -8.661439, lng: 115.136458};
+
+									function initMap() {
+
+										map = new google.maps.Map(document.getElementById('map'), {
+											center: myLatLng,
+											zoom: 16,
+											gestureHandling: 'greedy',
+											scrollwheel: false
+										});
+
+										var styles = [
+											{
+												elementType: 'labels.icon',
+												stylers: [
+													{ hue: "#7C6755" },
+													{ saturation: -100 }
+												]
+											},
+											{
+            					  featureType: 'water',
+            					  elementType: 'geometry',
+            					  stylers: [{color: '#D5EDEE'}]
+											},
+											{elementType: 'labels.text.fill', stylers: [{color: '#7C6755'}]},
+										];
+
+										map.setOptions({styles: styles});
+
+										var iconBase = 'assets/images/';
+										var marker = new google.maps.Marker({
+											position: myLatLng,
+											map: map,
+											icon: {
+												labelOrigin: new google.maps.Point(16,48),
+												url: iconBase + 'mapmarker.png'
+											},
+											label: {
+												text: "Citadines",
+												color: "#7C6755",
+												fontWeight: "bold",
+												fontSize: "16px",
+												fontFamily: "'Lora', serif"
+											}
+										});
+
+									}
+								</script>
+
+								<!-- key = API -->
+								<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9siCb8fpOuACU9kiBYj0I0L_F3PDq82A&callback=initMap" type="text/javascript"></script>
+							</div>
+						</div>
+
+						<div class="contact-detail">
+							<div class="wrapper">
+								<div class="contact-list">
+									<div class="contact-item">
+										<div class="symbol">
+											<img src="uploads/map-marker.png">
+										</div>
+										<div class="value">
+											<p class="heading">Citadines Berawa Beach</p>
+											<address>
+												Jl. Pantai Berawa <br>
+												Canggu, Kabupaten Badung <br>
+												Bali 12345
+											</address>
+										</div>
+									</div>
+									<div class="contact-item">
+										<div class="symbol">
+											<img src="uploads/map-marker.png">
+										</div>
+										<div class="value">
+											<p class="heading">Marketing Office</p>
+											<address>
+													Jl. Pulau Dewata No. 098AB <br>
+													Canggu, Kabupaten Badung <br>
+													Bali 12345
+											</address>
+										</div>
+									</div>
+									<div class="contact-item">
+										<div class="symbol">
+											<img src="uploads/envelope.png">
+										</div>
+										<div class="value">
+											<p class="heading">Contact</p>
+											<p class="email">info@citadines.com</p>
+											<p class="phone">+6221-123-4567</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section section-slider js-scene">
+							<div class="section-slider-container">
+								<div class="section-slider-slides">
+									<div class="slider-slides-container js-section-slider">
+										<div class="slides">
+											<div class="slide">
+												<img src="uploads/slider-contact-1.jpg">
+											</div>
+										</div>
+										<div class="slider-nav">
+											<a href="javascript:void(0);" class="left"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-left" /></svg></a>
+											<a href="javascript:void(0);" class="right"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-right" /></svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="section-slider-text">
+									<div class="text-container">
+										<div class="text-heading">
+											<h1>Take a Tour</h1>
+										</div>
+										<div class="text-content">
+											<p>Cleverly designed to optimise living space, the 25 sqm studio is ideal for a pair of travellers. Aenean ac mollis erat. Pellentesque sed dolor ante.</p>
+										</div>
+										<div class="link-more">
+											<a href="#" class="link">Make a Schedule</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section section-image js-scene">
+							<div class="section-image-container">
+								<div class="image">
+										<img src="uploads/photo-contact.jpg">
+								</div>
+								<div class="text">
+									<div class="text-container">
+										<div class="text-heading">
+											<h1>We always pair guaranteed comfort with great value.</h1>
+										</div>
+										<div class="link-more">
+											<a href="#" class="link toggle-inquiry">Inquiry Form</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+          </div>
+        </div>
+
+      </div>
+</div>
+
+<!-- inquiry form -->
+<div class="inquiry-popup">
+	<div class="inquiry-background">
+		<div class="wrapper">
+			<span class="inquiry-close" title="Close"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-minus" /></svg></span>
+			<div class="inquiry-container">
+				<div class="inquiry-heading">
+					<h1 class="title">Inquiry Form</h1>
+				</div>
+				<div class="inquiry-form">
+					<form>
+						<div class="form-group column-3">
+							<div class="form-text">
+								<label class="label" for="inquiry-name">Full Name</label>
+								<input type="text" id="inquiry-name" class="input" name="inquiry_name" placeholder="Jon Doe">
+								<span data-validate-for="full_name" class="visible">The full name field is required.</span>
+							</div>
+							<div class="form-text">
+								<label class="label" for="inquiry-email">Email Address</label>
+								<input type="email" id="inquiry-email" class="input" name="inquiry_email" placeholder="example@mail.com">
+							</div>
+							<div class="form-text">
+								<label class="label" for="inquiry-phone">Phone Number</label>
+								<input type="text" id="inquiry-phone" class="input" name="inquiry_phone">
+							</div>
+						</div>
+						<div class="form-text">
+							<label class="label" for="inquiry-notes">Notes</label>
+							<textarea id="inquiry-notes" class="input" name="inquiry_notes" placeholder="Your notes here"></textarea>
+						</div>
+						<div class="checkboxes">
+							<div class="form-checkbox">
+								<input type="checkbox" id="inquiry-show-room" class="input" name="inquiry_show_room">
+								<label class="label" for="inquiry-show-room">Show me a room/suite</label>
+							</div>
+							<div class="form-checkbox">
+								<input type="checkbox" id="inquiry-agreement" class="input" name="inquiry_agreement">
+								<label class="label" for="inquiry-agreement">I agree to the use of my personal data</label>
+							</div>
+						</div>
+						<div class="form-action">
+							<button type="submit" class="button button-inquiry">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- @import footer -->

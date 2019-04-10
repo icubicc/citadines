@@ -1,0 +1,183 @@
+.grid-connection {
+
+	@at-root {
+		.grid-connection-boxes {
+			@include column-items(-24px);
+
+			&:hover {
+
+				.photo {
+
+					.bg {
+						transform: translateX(0);
+					}
+
+					.img {
+						transform: scale(1);
+					}
+				}
+
+				.text {
+					opacity: 0.4;
+					transform: translateX(8px);
+				}
+			}
+
+			.img {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+			}
+
+			.bg {
+				visibility: hidden;
+			}
+
+			@include breakpoint(creeper) {
+				.img {
+					height: 280px;
+				}
+			}
+
+			@include breakpoint(walker) {
+				@include column-items(-8px);
+				display: flex;
+
+				.bg {
+					visibility: visible;
+				}
+
+				.img {
+					height: auto;
+				}
+			}
+		}
+
+		.grid-connection-box {
+			@include column-item(24px, 1);
+			overflow: hidden;
+			position: relative;
+
+			@include breakpoint(walker) {
+				@include column-item(8px, 3);
+			}
+
+			&:first-child {
+
+				.photo {
+
+					.bg {
+						background-position: left center;
+					}
+				}
+			}
+
+			&:last-child {
+
+				.photo {
+
+					.bg {
+						background-position: right center;
+					}
+				}
+			}
+
+			&:after {
+				content: "";
+				background-image: attr(data-image);
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+
+			.link {
+				display: block;
+
+				&:hover,
+				&:focus {
+
+					.text {
+						opacity: 1;
+						transform: translateX(0);
+
+						&:before {
+							transform: scaleX(1);
+						}
+					}
+				}
+			}
+
+			.photo {
+
+				.bg {
+					background-position: center center;
+					background-size: cover;
+					bottom: 0;
+					left: 0;
+					position: absolute;
+					top: 0;
+					transform: translateX(-100%);
+					transition: all 0.3s ease-out;
+					right: 0;
+					z-index: 1;
+
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						height: 40%;
+						background-image: linear-gradient(to top, rgba($black, 0.8), transparent);
+					}
+				}
+
+				.img {
+					transform: scale(1.1);
+					transition: all 0.2s ease-out;
+					width: 100%;
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					height: 40%;
+					background-image: linear-gradient(to top, rgba($black, 0.8), transparent);
+				}
+			}
+
+			.text {
+				bottom: 0;
+				left: 24px;
+				padding: 8px 0;
+				position: absolute;
+				right: 48px;
+				transition: all 0.2s ease-out;
+				z-index: 2;
+
+				&:before {
+					content: "";
+					background-color: $white;
+					height: 1px;
+					left: 0;
+					position: absolute;
+					top: -4px;
+					transform: scaleX(0.5);
+					transform-origin: left center;
+					transition: all 0.2s ease-out;
+					width: 100%;
+				}
+			}
+
+			.title {
+				@include font-size-300;
+				color: $white;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

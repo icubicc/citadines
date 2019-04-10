@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Tommy Sugiarto -- Designer
+
+
+# TECHNOLOGY COLOPHON
+
+	HTML5, CSS3, JavaScript ES5
+	SASS, Autoprefixer
+	Modernizr, jQuery

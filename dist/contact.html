@@ -1,0 +1,376 @@
+
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<title>Citadines</title>
+
+		<link rel="author" href="humans.txt" />
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#7c6755">
+		<meta name="theme-color" content="#ffffff">
+
+		<!--build:js assets/js/modernizr.js -->
+		<script src="assets/js/vendor/modernizr.min.js"></script>
+		<!-- endbuild -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>if (!window.jQuery) { document.write('<script src="jquery.min.js" async><\/script>'); }</script>
+
+		<link href="https://fonts.googleapis.com/css?family=Lora|Work+Sans" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="site-container" class="site-container">
+
+			<nav id="mobile-nav" class="mobile-nav" role="navigation">
+				<div class="mobile-nav-container">
+					<div class="mobile-nav-wrapper">
+						<span class="mobile-nav-close"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-minus" /></svg></span>
+						<ul class="list">
+							<li class="menu-item"><a href="index.html" class="link">Home</a></li>
+							<li class="menu-item"><a href="location.html" class="link">Location</a></li>
+							<li class="menu-item"><a href="project-story.html" class="link">Project</a></li>
+							<li class="menu-item"><a href="investment-1.html" class="link">Investment Plan</a></li>
+							<li class="menu-item"><a href="units.html" class="link">Units</a></li>
+							<li class="menu-item"><a href="project-status.html" class="link">Project Status</a></li>
+							<li class="menu-item current-menu-item"><a href="contact.html" class="link">Sales Info & Contact</a></li>
+						</ul>
+						<div class="mobile-nav-info">
+							<div class="address">
+								<span class="label">Address</span>
+								<address>
+									Jl. Pantai Berawa<br>
+									Canggu, Kabupaten Badung<br>
+									Bali 12345
+								</address>
+							</div>
+							<div class="contact">
+									<span class="label">Contact</span>
+								<p>info@citadines.com</p>
+								<p>+6221-123-4567</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<header id="site-header" class="site-header" role="banner">
+				<div class="inner wrapper">
+
+					<div class="menu-toggle">
+						<a href="#mobile-nav" class="link js-toggle" data-toggle-animation="manual" data-toggle-area="#mobile-nav"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-hamburger" /></svg></a>
+					</div>
+					<div class="site-logo">
+						<a href="index.html"><img src="assets/images/citadines-logo-2.svg" alt="Citadines Logo"></a>
+					</div>
+					<div class="site-lang">
+						<span id="mobile-lang-select" class="mobile-lang-select">EN<svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-caret-down" /></svg></span>
+						<ul id="lang-list" class="list">
+							<li class="menu-item current-menu-item"><a href="#" class="link">EN</a></li>
+							<li class="menu-item"><a href="#" class="link">ID</a></li>
+							<li class="menu-item"><a href="#" class="link">CN</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</header>
+
+<div class="page-hero">
+  <div class="page-hero-image">
+      <div class="wrapper">
+        <img src="uploads/hero-contact.jpg">
+      </div>
+  </div>
+  <div class="page-hero-title">
+      <div class="wrapper">
+        <div class="hero-title">
+          <div class="hero-title-container">
+            <h1 class="title">We'd love to hear from you</h1>
+            <p class="subtitle">Sed nunc dolor, ullamcorper vitae justo vel, sodales condimentum magna.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="page-breadcrumb">
+  <div class="wrapper">
+    <div class="breadcrumb"><a href="#" class="a">Home</a><span class="a">Sales Info & Contact</span></div>
+  </div>
+</div>
+
+<div id="site-content" class="site-content">
+    <div class="inner inner-zero">
+
+        <div class="main-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+          <div class="contact-page-container">
+
+            <div class="section contact-map zero-top">
+
+							<div class="google-map">
+								<div id="map" style="height: 400px;"></div>
+
+								<script>
+									var map;
+									var myLatLng = {lat: -8.661439, lng: 115.136458};
+
+									function initMap() {
+
+										map = new google.maps.Map(document.getElementById('map'), {
+											center: myLatLng,
+											zoom: 16,
+											gestureHandling: 'greedy',
+											scrollwheel: false
+										});
+
+										var styles = [
+											{
+												elementType: 'labels.icon',
+												stylers: [
+													{ hue: "#7C6755" },
+													{ saturation: -100 }
+												]
+											},
+											{
+            					  featureType: 'water',
+            					  elementType: 'geometry',
+            					  stylers: [{color: '#D5EDEE'}]
+											},
+											{elementType: 'labels.text.fill', stylers: [{color: '#7C6755'}]},
+										];
+
+										map.setOptions({styles: styles});
+
+										var iconBase = 'assets/images/';
+										var marker = new google.maps.Marker({
+											position: myLatLng,
+											map: map,
+											icon: {
+												labelOrigin: new google.maps.Point(16,48),
+												url: iconBase + 'mapmarker.png'
+											},
+											label: {
+												text: "Citadines",
+												color: "#7C6755",
+												fontWeight: "bold",
+												fontSize: "16px",
+												fontFamily: "'Lora', serif"
+											}
+										});
+
+									}
+								</script>
+
+								<!-- key = API -->
+								<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9siCb8fpOuACU9kiBYj0I0L_F3PDq82A&callback=initMap" type="text/javascript"></script>
+							</div>
+						</div>
+
+						<div class="contact-detail">
+							<div class="wrapper">
+								<div class="contact-list">
+									<div class="contact-item">
+										<div class="symbol">
+											<img src="uploads/map-marker.png">
+										</div>
+										<div class="value">
+											<p class="heading">Citadines Berawa Beach</p>
+											<address>
+												Jl. Pantai Berawa <br>
+												Canggu, Kabupaten Badung <br>
+												Bali 12345
+											</address>
+										</div>
+									</div>
+									<div class="contact-item">
+										<div class="symbol">
+											<img src="uploads/map-marker.png">
+										</div>
+										<div class="value">
+											<p class="heading">Marketing Office</p>
+											<address>
+													Jl. Pulau Dewata No. 098AB <br>
+													Canggu, Kabupaten Badung <br>
+													Bali 12345
+											</address>
+										</div>
+									</div>
+									<div class="contact-item">
+										<div class="symbol">
+											<img src="uploads/envelope.png">
+										</div>
+										<div class="value">
+											<p class="heading">Contact</p>
+											<p class="email">info@citadines.com</p>
+											<p class="phone">+6221-123-4567</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section section-slider js-scene">
+							<div class="section-slider-container">
+								<div class="section-slider-slides">
+									<div class="slider-slides-container js-section-slider">
+										<div class="slides">
+											<div class="slide">
+												<img src="uploads/slider-contact-1.jpg">
+											</div>
+										</div>
+										<div class="slider-nav">
+											<a href="javascript:void(0);" class="left"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-left" /></svg></a>
+											<a href="javascript:void(0);" class="right"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-right" /></svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="section-slider-text">
+									<div class="text-container">
+										<div class="text-heading">
+											<h1>Take a Tour</h1>
+										</div>
+										<div class="text-content">
+											<p>Cleverly designed to optimise living space, the 25 sqm studio is ideal for a pair of travellers. Aenean ac mollis erat. Pellentesque sed dolor ante.</p>
+										</div>
+										<div class="link-more">
+											<a href="#" class="link">Make a Schedule</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section section-image js-scene">
+							<div class="section-image-container">
+								<div class="image">
+										<img src="uploads/photo-contact.jpg">
+								</div>
+								<div class="text">
+									<div class="text-container">
+										<div class="text-heading">
+											<h1>We always pair guaranteed comfort with great value.</h1>
+										</div>
+										<div class="link-more">
+											<a href="#" class="link toggle-inquiry">Inquiry Form</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+          </div>
+        </div>
+
+      </div>
+</div>
+
+<!-- inquiry form -->
+<div class="inquiry-popup">
+	<div class="inquiry-background">
+		<div class="wrapper">
+			<span class="inquiry-close" title="Close"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-minus" /></svg></span>
+			<div class="inquiry-container">
+				<div class="inquiry-heading">
+					<h1 class="title">Inquiry Form</h1>
+				</div>
+				<div class="inquiry-form">
+					<form>
+						<div class="form-group column-3">
+							<div class="form-text">
+								<label class="label" for="inquiry-name">Full Name</label>
+								<input type="text" id="inquiry-name" class="input" name="inquiry_name" placeholder="Jon Doe">
+								<span data-validate-for="full_name" class="visible">The full name field is required.</span>
+							</div>
+							<div class="form-text">
+								<label class="label" for="inquiry-email">Email Address</label>
+								<input type="email" id="inquiry-email" class="input" name="inquiry_email" placeholder="example@mail.com">
+							</div>
+							<div class="form-text">
+								<label class="label" for="inquiry-phone">Phone Number</label>
+								<input type="text" id="inquiry-phone" class="input" name="inquiry_phone">
+							</div>
+						</div>
+						<div class="form-text">
+							<label class="label" for="inquiry-notes">Notes</label>
+							<textarea id="inquiry-notes" class="input" name="inquiry_notes" placeholder="Your notes here"></textarea>
+						</div>
+						<div class="checkboxes">
+							<div class="form-checkbox">
+								<input type="checkbox" id="inquiry-show-room" class="input" name="inquiry_show_room">
+								<label class="label" for="inquiry-show-room">Show me a room/suite</label>
+							</div>
+							<div class="form-checkbox">
+								<input type="checkbox" id="inquiry-agreement" class="input" name="inquiry_agreement">
+								<label class="label" for="inquiry-agreement">I agree to the use of my personal data</label>
+							</div>
+						</div>
+						<div class="form-action">
+							<button type="submit" class="button button-inquiry">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+			<footer id="site-footer" class="site-footer" role="contentinfo">
+				<div class="inner wrapper">
+
+					<div class="footer-logo">
+						<a href="#"><img src="assets/images/citadines-logo-2.svg" alt="Citadines Footer Logo"></a>
+					</div>
+					<div class="footer-nav">
+						<ul class="list">
+							<li class="menu-item"><a href="location.html" class="link">Location</a></li>
+							<li class="menu-item"><a href="project-story.html" class="link">Project</a></li>
+							<li class="menu-item"><a href="investment-1.html" class="link">Investment Plan</a></li>
+							<li class="menu-item"><a href="units.html" class="link">Units</a></li>
+							<li class="menu-item"><a href="project-status.html" class="link">Project Status</a></li>
+							<li class="menu-item"><a href="contact.html" class="link">Sales Info & Contact</a></li>
+							<li class="menu-item"><a href="sitemap.html" class="link">Sitemap</a></li>
+						</ul>
+					</div>
+					<div class="footer-social">
+						<ul class="list">
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-facebook" /></svg></a></li>
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-twitter" /></svg></a></li>
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-instagram" /></svg></a></li>
+						</ul>
+					</div>
+					<div class="copyright">
+						<p>&copy; <script>document.write((new Date()).getFullYear());</script> Citadines Berawa Beach Bali</p>
+						<p>developed by Genesis Indojaya</p>
+					</div>
+
+				</div>
+			</footer>
+		</div> <!-- #site-container -->
+
+		<!--build:js assets/js/vendor.js -->
+		<script src="assets/js/vendor/svg4everybody.min.js"></script>
+		<script src="assets/js/vendor/stickyfill.min.js"></script>
+		<script src="assets/js/vendor/imagesloaded.min.js"></script>
+		<script src="assets/js/vendor/anime.min.js"></script>
+		<script src="assets/js/vendor/scrollMonitor.min.js"></script>
+		<script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/vendor/flickity.min.js"></script>
+		<script src="assets/js/vendor/masonry.min.js"></script>
+		<!-- endbuild -->
+		<!--build:js assets/js/bundle.js -->
+		<script src="assets/js/helper.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/style.js"></script>
+		<!-- endbuild -->
+	</body>
+</html> <!-- haunter owned! -->

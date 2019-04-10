@@ -1,0 +1,101 @@
+.popup-close.popup-close {
+	@include font-size-400;
+	text-transform: uppercase;
+	text-align: center;
+	top: 0;
+	letter-spacing: 2px;
+
+	&:hover {
+		background: none;
+	}
+}
+
+.popup-arrow {
+	color: $white;
+
+	&:before,
+	&:after {
+		content: none;
+	}
+
+	.icon {
+		height: 28px;
+		width: 28px;
+		pointer-events: none;
+	}
+	
+}
+
+.mfp-container {
+
+	&.mfp-image-holder {
+		padding: 32px 70px;
+
+		@media screen and (min-width: 900px) {
+			padding: 32px 80px;
+		}
+	}
+
+	&.mfp-inline-holder {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+
+.mfp-arrow {
+	transform: scale(0.85);
+
+	@media screen and (min-width: 900px) {
+		transform: scale(1);
+	}
+}
+
+.popup-inline {
+	background-color: $white;
+	max-width: 900px;
+	margin: 32px auto;
+	position: relative;
+
+	.popup-header {
+		margin-bottom: 28px;
+	}
+
+	button.mfp-close {
+		display: none;
+	}
+
+		.mfp-custom-close {
+			position: absolute;
+			top: 24px;
+			right: 32px;
+			font-size: 28px;
+			color: $color-one-500 !important;
+			background: transparent;
+			border: none;
+			padding: 0;
+			line-height: 1;
+			z-index: 2;
+	
+			&:hover, &:focus {
+				background-color: transparent;
+				outline: 0 !important;
+			}
+		}
+}
+
+.popup-inline-about {
+	padding: 48px 48px 24px;
+
+	.inline-desc {
+		column-count: 1;
+		column-gap: 28px;
+
+		@include breakpoint(crawler) {
+			padding-left: 52px;
+		}
+		
+		@include breakpoint(walker) {
+			column-count: 2;
+		}
+	}
+}
