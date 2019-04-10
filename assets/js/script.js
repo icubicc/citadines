@@ -34,9 +34,9 @@ jQuery(document).ready(function($) {
 		removalDelay: 200,
 		callbacks: {
 			open: function() {
-				
+
 				$('body').addClass('mfp-inline-toggled');
-				
+
 				var project_status_slider = $('.js-project-status-slider').find('.slides').flickity({
 					draggable: 0,
 					imagesLoaded: true,
@@ -52,13 +52,28 @@ jQuery(document).ready(function($) {
 				});
 
 				$.magnificPopup.instance.close = function () {
-				
+
 						$('body').removeClass('mfp-inline-toggled');
 
 						$.magnificPopup.proto.close.call(this);
-				}; 
-				
+				};
+
 			}
+		}
+	});
+
+	$('.js-popup-image').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
 		}
 	});
 
@@ -79,11 +94,11 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	$(".site-container").mouseup(function(e) 
+	$(".site-container").mouseup(function(e)
 	{
 			var subject = $("#lang-list");
 			var sunjectHeadDrop = $("#head-list-dropdown");
-	
+
 			// if the target of the click isn't the container nor a descendant of the container
 			if(e.target.id != subject.attr('id') && !subject.has(e.target).length)
 			{
@@ -138,7 +153,7 @@ jQuery(document).ready(function($) {
 		pageDots: false,
 		arrowShape: 'M98 50.25c0 2.761-2.239 5-5 5h-72.951l22.657 22.719c1.95 1.956 1.946 5.121-.009 7.071-.976.974-2.254 1.46-3.531 1.46-1.281 0-2.564-.49-3.54-1.469l-31.166-31.25c-1.946-1.952-1.946-5.11 0-7.062l31.166-31.25c1.95-1.955 5.115-1.959 7.071-.009 1.955 1.95 1.959 5.115.009 7.071l-22.657 22.719h72.951c2.761 0 5 2.239 5 5'
 	});
-	
+
 	var grid_slide_count = $('.js-section-grid-slider .slides .slide').length;
 	if(grid_slide_count <= 3 ) {
 		$('.flickity-prev-next-button').addClass('is-hidden');
@@ -151,7 +166,7 @@ jQuery(document).ready(function($) {
 		var parent = $('.head-dropdown');
 
 		parent.addClass('is-toggled');
-		
+
 	});
 
 	$('.head-dropdown .toggle-close').click(function() {
@@ -225,7 +240,7 @@ jQuery(document).ready(function($) {
 
 		slider.on( 'select.flickity', function() {
 			var flkty = slider.data('flickity');
-			
+
 			if((flkty.selectedIndex+1) == flkty.slides.length) {
 				sliderNav.flickity( 'select', 0 );
 			}
@@ -266,7 +281,7 @@ jQuery(document).ready(function($) {
 
 	sliderUnitDetail.on( 'select.flickity', function() {
 		var flktyD = sliderUnitDetail.data('flickity');
-		
+
 		if((flktyD.selectedIndex+1) == flktyD.slides.length) {
 			sliderUnitDetailNav.flickity( 'select', 0 );
 		}

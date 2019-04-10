@@ -336,6 +336,14 @@
   }
 }
 
+.download-form {
+  padding-left: 24px;
+
+  @include breakpoint(crawler) {
+    padding-left: 52px;
+  }
+}
+
 .event-calendar {
   padding-bottom: 240px;
 

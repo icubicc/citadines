@@ -23,31 +23,6 @@
 		width: 28px;
 		pointer-events: none;
 	}
-	
-}
-
-.mfp-container {
-
-	&.mfp-image-holder {
-		padding: 32px 70px;
-
-		@media screen and (min-width: 900px) {
-			padding: 32px 80px;
-		}
-	}
-
-	&.mfp-inline-holder {
-		padding-left: 24px;
-		padding-right: 24px;
-	}
-}
-
-.mfp-arrow {
-	transform: scale(0.85);
-
-	@media screen and (min-width: 900px) {
-		transform: scale(1);
-	}
 }
 
 .popup-inline {
@@ -75,7 +50,7 @@
 			padding: 0;
 			line-height: 1;
 			z-index: 2;
-	
+
 			&:hover, &:focus {
 				background-color: transparent;
 				outline: 0 !important;
@@ -93,7 +68,7 @@
 		@include breakpoint(crawler) {
 			padding-left: 52px;
 		}
-		
+
 		@include breakpoint(walker) {
 			column-count: 2;
 		}
