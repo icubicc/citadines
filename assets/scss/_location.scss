@@ -124,6 +124,14 @@
   left: auto;
   margin-bottom: -48px;
 
+  @include breakpoint(runner) {
+    width: calc(100% + 80px);
+  }
+
+  @include breakpoint(teleporter) {
+    width: calc(100% + 120px);
+  }
+
   &.in-viewport {
     transform: translateY(0);
     opacity: 1;
