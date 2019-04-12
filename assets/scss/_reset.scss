@@ -68,12 +68,6 @@ p, address, blockquote, figure, pre, table {
 	}
 }
 
-p {
-	&:last-child {
-		margin-bottom: 24px;
-	}
-}
-
 ol,
 ul {
 	margin-top: 0;

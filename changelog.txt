@@ -64,3 +64,8 @@
 06.03.19
 - update style.css
 - update ganti logo "citadines-logo-2.svg"
+
+12.04.19
++ update style.css
++ update html statistic di location.html, cari comment "TOMMY 12.04.19"
++ update html di project-siteplan.html, cari comment "TOMMY 12.04.19"

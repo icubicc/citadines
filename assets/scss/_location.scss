@@ -74,6 +74,14 @@
     width: 50%;
   }
 
+  .wrapper {
+    background-color: #F1EFED;
+
+    @include breakpoint(crawler) {
+      background-color: $white;
+    }
+  }
+
   @at-root {
     .tourism-statistic-container {
       background-color: #F1EFED;
@@ -89,18 +97,30 @@
       }
 
       .statistic-text {
-        width: 60%;
-        float: left;
-        padding-right: 80px;
+        margin-bottom: 48px;
 
         .heading {
           margin-bottom: 48px;
         }
+
+        @include breakpoint(crawler) {
+          padding-right: 48px;
+        }
+
+        @include breakpoint(runner) {
+          width: 60%;
+          float: left;
+          padding-right: 80px;
+          margin-bottom: 0;
+        }
       }
 
       .statistic-image {
-        width: 40%;
-        float: left;
+
+        @include breakpoint(runner) {
+          width: 40%;
+          float: left;
+        }
 
         .image {
           padding-right: 48px;
@@ -120,16 +140,22 @@
   transition-duration: 1s;
   transition-delay: 0.5s;
   transition-timing-function: ease-out;
-  padding-left: 64px;
+  padding-left: 24px;
   left: auto;
   margin-bottom: -48px;
+  right: -24px;
+
+  @include breakpoint(crawler) {
+    right: -48px;
+  }
 
   @include breakpoint(runner) {
     width: calc(100% + 80px);
+    right: 0;
   }
 
   @include breakpoint(teleporter) {
-    width: calc(100% + 120px);
+    width: calc(100% + 145px);
   }
 
   &.in-viewport {
