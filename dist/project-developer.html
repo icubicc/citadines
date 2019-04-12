@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
@@ -18,7 +21,9 @@
 		<meta name="msapplication-TileColor" content="#7c6755">
 		<meta name="theme-color" content="#ffffff">
 
-		<script src="assets/js/modernizr.js"></script>
+		<!--build:js assets/js/modernizr.js -->
+		<script src="assets/js/vendor/modernizr.min.js"></script>
+		<!-- endbuild -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script>if (!window.jQuery) { document.write('<script src="jquery.min.js" async><\/script>'); }</script>
 
@@ -51,7 +56,7 @@
 								</address>
 							</div>
 							<div class="contact">
-								<span class="label">Contact</span>
+									<span class="label">Contact</span>
 								<p>info@citadines.com</p>
 								<p>+6221-123-4567</p>
 							</div>
@@ -81,115 +86,127 @@
 				</div>
 			</header>
 
-			<div class="page-hero">
-				<div class="page-hero-image">
-					<div class="wrapper">
-						<img src="uploads/hero-project.jpg">
+<div class="page-hero">
+  <div class="page-hero-image">
+      <div class="wrapper">
+        <img src="uploads/hero-project.jpg">
       </div>
-					</div>
-					<div class="page-hero-title">
-						<div class="wrapper">
-							<div class="hero-title">
-								<div class="hero-title-container">
-									<h1 class="title">Project</h1>
-									<p class="subtitle">Sed nunc dolor, ullamcorper vitae justo vel, sodales condimentum magna.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- page-focus -->
-				<div id="main-page-focus"></div> <!-- end-page-focus -->
-				<div class="page-breadcrumb">
-					<div class="wrapper">
-						<div class="breadcrumb"><a href="#" class="a">Home</a><span class="a">The Project</span></div>
-					</div>
-				</div>
+  </div>
+  <div class="page-hero-title">
+      <div class="wrapper">
+        <div class="hero-title">
+          <div class="hero-title-container">
+            <h1 class="title">Project</h1>
+            <p class="subtitle">Sed nunc dolor, ullamcorper vitae justo vel, sodales condimentum magna.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- page-focus --> <div id="main-page-focus"></div> <!-- end-page-focus -->
+<div class="page-breadcrumb">
+  <div class="wrapper">
+    <div class="breadcrumb"><a href="#" class="a">Home</a><span class="a">The Project</span></div>
+  </div>
+</div>
 
-				<div id="site-content" class="site-content">
-					<div class="inner inner-zero">
-
-						<div class="main-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-							<div class="project-page-container">
-								<div class="wrapper zero-left">
-									<div class="main-page-heading">
-										<h1 class="title">Developer</h1>
-									</div>
-									<div class="main-page-content">
-										<div class="text-post">
-											<p>Aliquam ultricies dolor nec neque consectetur sodales. Duis euismod maximus quam. Mauris euismod massa id lacus lacinia, sit amet congue mi tempor. Proin ut fringilla justo. Suspendisse faucibus ex vitae metus interdum tristique. Vivamus vestibulum, dolor vel lacinia ultricies, eros ex egestas lorem, ac consequat enim lectus non turpis. Morbi blandit interdum lorem vitae vulputate.</p>
-											<p>Maecenas magna nibh, volutpat quis condimentum sit amet, accumsan quis est. Maecenas sed dapibus neque. Donec eleifend et sapien sed hendrerit. Donec quam enim, consectetur vitae risus sit amet, semper ultrices massa. Morbi ac aliquam leo, at vehicula erat. Integer semper mollis hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel nisl tempus, pharetra tortor in, aliquet nisi. Vestibulum dignissim enim tempus, maximus diam sed, mattis neque. Vestibulum interdum at massa non varius. Nam non justo eget ligula porta posuere elementum a neque. Nulla in cursus leo. Cras egestas scelerisque dui. In hac habitasse platea dictumst.</p>
-											<img src="uploads/photo-project-developer.jpg">
+<div id="site-content" class="site-content">
+    <div class="inner inner-zero">
+  
+        <div class="main-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+          <div class="project-page-container">
+            <div class="wrapper zero-left">
+                <div class="main-page-heading">
+                  <h1 class="title">Developer</h1>
+                </div>
+                <div class="main-page-content">
+                  <div class="text-post">
+                    <p>Aliquam ultricies dolor nec neque consectetur sodales. Duis euismod maximus quam. Mauris euismod massa id lacus lacinia, sit amet congue mi tempor. Proin ut fringilla justo. Suspendisse faucibus ex vitae metus interdum tristique. Vivamus vestibulum, dolor vel lacinia ultricies, eros ex egestas lorem, ac consequat enim lectus non turpis. Morbi blandit interdum lorem vitae vulputate.</p>
+                    <p>Maecenas magna nibh, volutpat quis condimentum sit amet, accumsan quis est. Maecenas sed dapibus neque. Donec eleifend et sapien sed hendrerit. Donec quam enim, consectetur vitae risus sit amet, semper ultrices massa. Morbi ac aliquam leo, at vehicula erat. Integer semper mollis hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel nisl tempus, pharetra tortor in, aliquet nisi. Vestibulum dignissim enim tempus, maximus diam sed, mattis neque. Vestibulum interdum at massa non varius. Nam non justo eget ligula porta posuere elementum a neque. Nulla in cursus leo. Cras egestas scelerisque dui. In hac habitasse platea dictumst.</p>
+                    <img src="uploads/photo-project-developer.jpg">
                   </div>
-										</div>
-									</div>
-								</div>
-							</div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <aside id="main-aside" class="main-aside main-aside-left project-aside" role="complementary">
 
-							<aside id="main-aside" class="main-aside main-aside-left project-aside" role="complementary">
+	<div class="sticky-aside">
 
-								<div class="sticky-aside">
+		<div class="sidebar-selected">
+			<span class="selected-item">Developer</span>
+			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-caret-down" /></svg></span>
+		</div>
 
-									<div class="sidebar-selected">
-										<span class="selected-item">Developer</span>
-										<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-caret-down" /></svg></span>
-									</div>
+			<div class="sidebar-nav">
+				<ul class="list">
+					<li class="menu-item"><a href="project-story.html#main-page-focus" class="link">Project Story</a></li>
+					<li class="menu-item current-menu-item"><a href="project-developer.html#main-page-focus" class="link">Developer</a></li>
+					<li class="menu-item"><a href="project-brand.html#main-page-focus" class="link">Brand & Manager</a></li>
+					<li class="menu-item"><a href="project-architect.html#main-page-focus" class="link">Architect & Interior Designer</a></li>
+					<li class="menu-item"><a href="project-business-plan.html#main-page-focus" class="link">Business Plan</a></li>
+					<li class="menu-item"><a href="project-siteplan.html#main-page-focus" class="link">Siteplan</a></li>
+					<!-- <li class="$project-facilities-nav"><a href="project-facilities.html#main-page-focus" class="link">Facilities</a></li> -->
+					<li class="menu-item"><a href="project-gallery.html#main-page-focus" class="link">Gallery</a></li>
+					<li class="menu-item"><a href="project-download.html#main-page-focus" class="link">Download Catalogue</a></li>
+				</ul>
+			</div>
 
-									<div class="sidebar-nav">
-										<ul class="list">
-											<li class="menu-item"><a href="project-story.html#main-page-focus" class="link">Project Story</a></li>
-											<li class="menu-item current-menu-item"><a href="project-developer.html#main-page-focus" class="link">Developer</a></li>
-											<li class="menu-item"><a href="project-brand.html#main-page-focus" class="link">Brand & Manager</a></li>
-											<li class="menu-item"><a href="project-architect.html#main-page-focus" class="link">Architect & Interior Designer</a></li>
-											<li class="menu-item"><a href="project-business-plan.html#main-page-focus" class="link">Business Plan</a></li>
-											<li class="menu-item"><a href="project-siteplan.html#main-page-focus" class="link">Siteplan</a></li>
-											<!-- <li class="$project-facilities-nav"><a href="project-facilities.html#main-page-focus" class="link">Facilities</a></li> -->
-											<li class="menu-item"><a href="project-gallery.html#main-page-focus" class="link">Gallery</a></li>
-											<li class="menu-item"><a href="project-download.html#main-page-focus" class="link">Download Catalogue</a></li>
-										</ul>
-									</div>
+	</div>
 
-								</div>
+</aside>
+  
+      </div>
+</div>
 
-							</aside>
+			<footer id="site-footer" class="site-footer" role="contentinfo">
+				<div class="inner wrapper">
 
-						</div>
+					<div class="footer-logo">
+						<a href="#"><img src="assets/images/citadines-logo-2.svg" alt="Citadines Footer Logo"></a>
+					</div>
+					<div class="footer-nav">
+						<ul class="list">
+							<li class="menu-item"><a href="location.html" class="link">Location</a></li>
+							<li class="menu-item"><a href="project-story.html" class="link">Project</a></li>
+							<li class="menu-item"><a href="investment-1.html" class="link">Investment Plan</a></li>
+							<li class="menu-item"><a href="units.html" class="link">Units</a></li>
+							<li class="menu-item"><a href="project-status.html" class="link">Project Status</a></li>
+							<li class="menu-item"><a href="contact.html" class="link">Sales Info & Contact</a></li>
+							<li class="menu-item"><a href="sitemap.html" class="link">Sitemap</a></li>
+						</ul>
+					</div>
+					<div class="footer-social">
+						<ul class="list">
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-facebook" /></svg></a></li>
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-twitter" /></svg></a></li>
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-instagram" /></svg></a></li>
+						</ul>
+					</div>
+					<div class="copyright">
+						<p>&copy; <script>document.write((new Date()).getFullYear());</script> Citadines Berawa Beach Bali</p>
+						<p>developed by Genesis Indojaya</p>
 					</div>
 
-					<footer id="site-footer" class="site-footer" role="contentinfo">
-						<div class="inner wrapper">
+				</div>
+			</footer>
+		</div> <!-- #site-container -->
 
-							<div class="footer-logo">
-								<a href="#"><img src="assets/images/citadines-logo-2.svg" alt="Citadines Footer Logo"></a>
-							</div>
-							<div class="footer-nav">
-								<ul class="list">
-									<li class="menu-item"><a href="location.html" class="link">Location</a></li>
-									<li class="menu-item"><a href="project-story.html" class="link">Project</a></li>
-									<li class="menu-item"><a href="investment-1.html" class="link">Investment Plan</a></li>
-									<li class="menu-item"><a href="units.html" class="link">Units</a></li>
-									<li class="menu-item"><a href="project-status.html" class="link">Project Status</a></li>
-									<li class="menu-item"><a href="contact.html" class="link">Sales Info & Contact</a></li>
-									<li class="menu-item"><a href="sitemap.html" class="link">Sitemap</a></li>
-								</ul>
-							</div>
-							<div class="footer-social">
-								<ul class="list">
-									<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-facebook" /></svg></a></li>
-									<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-twitter" /></svg></a></li>
-									<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-instagram" /></svg></a></li>
-								</ul>
-							</div>
-							<div class="copyright">
-								<p>&copy; <script>document.write((new Date()).getFullYear());</script> Citadines Berawa Beach Bali</p>
-								<p>developed by Genesis Indojaya</p>
-							</div>
-
-						</div>
-					</footer>
-				</div> <!-- #site-container -->
-
-				<script src="assets/js/vendor.js"></script>
-				<script src="assets/js/bundle.js"></script>
+		<!--build:js assets/js/vendor.js -->
+		<script src="assets/js/vendor/svg4everybody.min.js"></script>
+		<script src="assets/js/vendor/stickyfill.min.js"></script>
+		<script src="assets/js/vendor/imagesloaded.min.js"></script>
+		<script src="assets/js/vendor/anime.min.js"></script>
+		<script src="assets/js/vendor/scrollMonitor.min.js"></script>
+		<script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/vendor/flickity.min.js"></script>
+		<script src="assets/js/vendor/masonry.min.js"></script>
+		<!-- endbuild -->
+		<!--build:js assets/js/bundle.js -->
+		<script src="assets/js/helper.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/style.js"></script>
+		<!-- endbuild -->
 	</body>
 </html> <!-- haunter owned! -->

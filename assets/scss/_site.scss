@@ -789,10 +789,6 @@
 			.section-image-container {
 				&::before {
 					background: #F1EFED;
-
-					@include breakpoint(runner) {
-						background: none;
-					}
 				}
 			}
 		}
@@ -811,29 +807,7 @@
 			}
 
 			&::before {
-				content: "";
-				background: #F1EFED;
-				position: absolute;
-				width: calc(50% - 24px);
-				height: 100%;
-				visibility: hidden;
-				left: 50%;
-
-				@include breakpoint(walker) {
-					visibility: visible;
-				}
-
-				@media screen and (min-width: 640px) {
-					width: calc(50% - 48px);
-				}
-
-				@media screen and (min-width: 1024px) {
-					width: calc(50% - 80px);
-				}
-
-				@media screen and (min-width: 1295px) {
-					width: calc(50% - 145px);
-				}
+				background: transparent !important;
 			}
 		}
 
@@ -853,7 +827,11 @@
 
 		.image-statistic {
 			width: 100%;
-			padding: 0 48px 32px;
+			position: relative;
+
+			.image-statistic-container {
+				padding: 0 48px 80px;
+			}
 		}
 
 		.text {
@@ -866,7 +844,7 @@
 			}
 		}
 
-		@include breakpoint(walker) {
+		@include breakpoint(runner) {
 			&::before {
 				width: 55%;
 			}
@@ -881,7 +859,6 @@
 			.image-statistic {
 				width: 50%;
 				float: right;
-				padding: 0 48px 0 0;
 				text-align: right;
 
 				.image-statistic-container {
@@ -904,9 +881,6 @@
 		}
 
 		@include breakpoint(runner) {
-			.image-statistic {
-				padding: 0 80px 0 0;
-			}
 
 			.text {
 				padding: 80px 48px 80px 80px;

@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
@@ -18,7 +21,9 @@
 		<meta name="msapplication-TileColor" content="#7c6755">
 		<meta name="theme-color" content="#ffffff">
 
-		<script src="assets/js/modernizr.js"></script>
+		<!--build:js assets/js/modernizr.js -->
+		<script src="assets/js/vendor/modernizr.min.js"></script>
+		<!-- endbuild -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script>if (!window.jQuery) { document.write('<script src="jquery.min.js" async><\/script>'); }</script>
 
@@ -51,7 +56,7 @@
 								</address>
 							</div>
 							<div class="contact">
-								<span class="label">Contact</span>
+									<span class="label">Contact</span>
 								<p>info@citadines.com</p>
 								<p>+6221-123-4567</p>
 							</div>
@@ -81,246 +86,259 @@
 				</div>
 			</header>
 
-			<div class="page-hero">
-				<div class="page-hero-image">
-					<div class="wrapper">
-						<div class="units-detail-slider">
-							<div class="slides">
-								<div class="slide">
-									<img src="uploads/slider-units-detail-1.jpg">
+  <div class="page-hero">
+    <div class="page-hero-image">
+        <div class="wrapper">
+          <div class="units-detail-slider">
+            <div class="slides">
+              <div class="slide">
+                <img src="uploads/slider-units-detail-1.jpg">
               </div>
-									<div class="slide">
-										<img src="uploads/hero-units.jpg">
+              <div class="slide">
+                <img src="uploads/hero-units.jpg">
               </div>
-									</div>
-									<div class="units-detail-slider-nav">
-										<div class="units-detail-slider-nav-arrow">
-											<a href="javascript:void(0);" class="left"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-left"></use></svg></a>
-											<a href="javascript:void(0);" class="right"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-right"></use></svg></a>
-										</div>
-										<div class="units-detail-slider-bullets">
-											<div class="units-detail-slider-bullet">
-												<img src="uploads/photo-units-1-1.jpg">
-                </div>
-												<div class="units-detail-slider-bullet">
-													<img src="uploads/units-detail-bullet-2.jpg">
-                </div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="page-hero-title unit-detail-hero-title">
-									<div class="wrapper">
-										<div class="hero-title">
-											<div class="hero-title-container">
-												<h1 class="title">Studio</h1>
-												<p class="subtitle">Sed nunc dolor, ullamcorper vitae justo vel, sodales condimentum magna.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="page-breadcrumb">
-								<div class="wrapper">
-									<div class="breadcrumb"><a href="#" class="a">Home</a><a href="" class="a">Units</a><span class="a">Studio</span></div>
-								</div>
-							</div>
-
-							<div id="site-content" class="site-content">
-								<div class="inner inner-zero">
-
-									<div class="main-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
-										<div class="section units-detail zero-top">
-											<div class="wrapper">
-												<div class="units-detail-container">
-													<div class="units-detail-image">
-														<img src="uploads/units-detail-image.jpg">
-              </div>
-														<div class="units-detail-content">
-															<div class="content-section specification">
-																<div class="heading">
-																	<h4 class="title">Specification</h4>
-																</div>
-																<div class="content">
-																	<ul class="specifications">
-																		<li class="specification">
-																			<span class="symbol"><img src="assets/images/icon-unit-width.png"></span>
-																			<span class="value">25sqm</span>
-																		</li>
-																		<li class="specification">
-																			<span class="symbol"><img src="assets/images/icon-window.png"></span>
-																			<span class="value">Garden View</span>
-																		</li>
-																		<li class="specification">
-																			<span class="symbol"><img src="assets/images/icon-bed.png"></span>
-																			<span class="value">2 Single Bed or 1 Double Bed</span>
-																		</li>
-																		<li class="specification">
-																			<span class="symbol"><img src="assets/images/icon-bathtub.png"></span>
-																			<span class="value">Shower Only</span>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-															<div class="content-section description">
-																<div class="heading">
-																	<h4 class="title">Description</h4>
-																</div>
-																<div class="content">
-																	<div class="text-post">
-																		<p>Studio Room is fitted with a sleeping area and shower bathroom. The sleeping area is fitted either with a queen-size bed or twin beds. The apartment itself is modernly furnished with elegant, sleek furniture sporting pops of colour, which instantly brightens the space.</p>
-																		<p>Each apartment also includes telephone with IDD and voicemail facilities, LED television with cable channels, in-room electronic safe, hairdryer, maximum occupancy: 2 pax and non-smoking room. Complimentary daily housekeeping and Wi-Fi connectivity are also available.</p>
-																	</div>
-																</div>
-															</div>
-															<div class="content-section social-share">
-																<div class="heading">
-																	<h4 class="title">Share</h4>
-																</div>
-																<div class="content">
-																	<a href="#" class="social-link facebook" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-facebook" /></svg></a>
-																	<a href="#" class="social-link twitter" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-twitter" /></svg></a>
-																	<a href="#" class="social-link chain" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chain" /></svg></a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="section overview units-facilities-section units-single-facilities">
-												<div class="wrapper">
-													<div class="overview-container">
-														<div class="section-heading">
-															<h1 class="title">Available in all rooms</h1>
-														</div>
-														<div class="facility-list">
-															<div class="slides">
-																<div class="slide">
-																	<ul class="list">
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-air-conditioner" /></svg></span>
-																			<span class="value">Air Conditioner</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-desk" /></svg></span>
-																			<span class="value">Desk</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-bottle" /></svg></span>
-																			<span class="value">Free Bottled Water</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-hair-dryer" /></svg></span>
-																			<span class="value">Hair Dryer</span>
-																		</li>
-																	</ul>
-																</div>
-																<div class="slide">
-																	<ul class="list">
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-television" /></svg></span>
-																			<span class="value">Television</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-towel" /></svg></span>
-																			<span class="value">Towel</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-toiletries" /></svg></span>
-																			<span class="value">Toiletries</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-wifi" /></svg></span>
-																			<span class="value">Room & Public Wi-fi</span>
-																		</li>
-																	</ul>
-																</div>
-																<div class="slide">
-																	<ul class="list">
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-playground" /></svg></span>
-																			<span class="value">Access to Playground</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-gym" /></svg></span>
-																			<span class="value">Access to Gymnasium</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-spa" /></svg></span>
-																			<span class="value">Access to Spa</span>
-																		</li>
-																		<li class="item">
-																			<span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-pool" /></svg></span>
-																			<span class="value">Access to Swimming Pool</span>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="section section-image js-scene">
-												<div class="section-image-container">
-													<div class="image">
-														<img src="uploads/photo-contact.jpg">
             </div>
-														<div class="text">
-															<div class="text-container">
-																<div class="text-heading">
-																	<h1>We always pair guaranteed comfort with great value.</h1>
-																</div>
-																<div class="link-more">
-																	<a href="#" class="link toggle-inquiry">Inquiry Form</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
+            <div class="units-detail-slider-nav">
+              <div class="units-detail-slider-nav-arrow">
+                <a href="javascript:void(0);" class="left"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-left"></use></svg></a>
+                <a href="javascript:void(0);" class="right"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-arrow-right"></use></svg></a>
+              </div>
+              <div class="units-detail-slider-bullets">
+                <div class="units-detail-slider-bullet">
+                  <img src="uploads/photo-units-1-1.jpg">
+                </div>
+                <div class="units-detail-slider-bullet">
+                  <img src="uploads/units-detail-bullet-2.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="page-hero-title unit-detail-hero-title">
+        <div class="wrapper">
+          <div class="hero-title">
+            <div class="hero-title-container">
+              <h1 class="title">Studio</h1>
+              <p class="subtitle">Sed nunc dolor, ullamcorper vitae justo vel, sodales condimentum magna.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="page-breadcrumb">
+    <div class="wrapper">
+      <div class="breadcrumb"><a href="#" class="a">Home</a><a href="" class="a">Units</a><span class="a">Studio</span></div>
+    </div>
+  </div>
+  
+  <div id="site-content" class="site-content">
+    <div class="inner inner-zero">
+    
+      <div class="main-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+        
+        <div class="section units-detail zero-top">
+          <div class="wrapper">
+            <div class="units-detail-container">
+              <div class="units-detail-image">
+                <img src="uploads/units-detail-image.jpg">
+              </div>
+              <div class="units-detail-content">
+                <div class="content-section specification">
+                  <div class="heading">
+                    <h4 class="title">Specification</h4>
+                  </div>
+                  <div class="content">
+                    <ul class="specifications">
+                      <li class="specification">
+                        <span class="symbol"><img src="assets/images/icon-unit-width.png"></span>
+                        <span class="value">25sqm</span>
+                      </li>
+                      <li class="specification">
+                        <span class="symbol"><img src="assets/images/icon-window.png"></span>
+                        <span class="value">Garden View</span>
+                      </li>
+                      <li class="specification">
+                        <span class="symbol"><img src="assets/images/icon-bed.png"></span>
+                        <span class="value">2 Single Bed or 1 Double Bed</span>
+                      </li>
+                      <li class="specification">
+                        <span class="symbol"><img src="assets/images/icon-bathtub.png"></span>
+                        <span class="value">Shower Only</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="content-section description">
+                  <div class="heading">
+                    <h4 class="title">Description</h4>
+                  </div>
+                  <div class="content">
+                    <div class="text-post">
+                      <p>Studio Room is fitted with a sleeping area and shower bathroom. The sleeping area is fitted either with a queen-size bed or twin beds. The apartment itself is modernly furnished with elegant, sleek furniture sporting pops of colour, which instantly brightens the space.</p> 
+                      <p>Each apartment also includes telephone with IDD and voicemail facilities, LED television with cable channels, in-room electronic safe, hairdryer, maximum occupancy: 2 pax and non-smoking room. Complimentary daily housekeeping and Wi-Fi connectivity are also available.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-section social-share">
+                  <div class="heading">
+                    <h4 class="title">Share</h4>
+                  </div>
+                  <div class="content">
+                    <a href="#" class="social-link facebook" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-facebook" /></svg></a>
+                    <a href="#" class="social-link twitter" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-twitter" /></svg></a>
+                    <a href="#" class="social-link chain" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chain" /></svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-											</div>
+        <div class="section overview units-facilities-section units-single-facilities">
+          <div class="wrapper">
+            <div class="overview-container">
+              <div class="section-heading">
+                <h1 class="title">Available in all rooms</h1>
+              </div>
+              <div class="facility-list">
+                <div class="slides">
+                  <div class="slide">
+                    <ul class="list">
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-air-conditioner" /></svg></span>
+                        <span class="value">Air Conditioner</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-desk" /></svg></span>
+                        <span class="value">Desk</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-bottle" /></svg></span>
+                        <span class="value">Free Bottled Water</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-hair-dryer" /></svg></span>
+                        <span class="value">Hair Dryer</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="slide">
+                    <ul class="list">
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-television" /></svg></span>
+                        <span class="value">Television</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-towel" /></svg></span>
+                        <span class="value">Towel</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-toiletries" /></svg></span>
+                        <span class="value">Toiletries</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-wifi" /></svg></span>
+                        <span class="value">Room & Public Wi-fi</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="slide">
+                    <ul class="list">
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-playground" /></svg></span>
+                        <span class="value">Access to Playground</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-gym" /></svg></span>
+                        <span class="value">Access to Gymnasium</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-spa" /></svg></span>
+                        <span class="value">Access to Spa</span>
+                      </li>
+                      <li class="item">
+                        <span class="symbol"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-pool" /></svg></span>
+                        <span class="value">Access to Swimming Pool</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-										</div>
-									</div>
+        <div class="section section-image js-scene">
+          <div class="section-image-container">
+            <div class="image">
+                <img src="uploads/photo-contact.jpg">
+            </div>
+            <div class="text">
+              <div class="text-container">
+                <div class="text-heading">
+                  <h1>We always pair guaranteed comfort with great value.</h1>
+                </div>
+                <div class="link-more">
+                  <a href="#" class="link toggle-inquiry">Inquiry Form</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    
+    </div>
+  </div>
+  
+  			<footer id="site-footer" class="site-footer" role="contentinfo">
+				<div class="inner wrapper">
 
-									<footer id="site-footer" class="site-footer" role="contentinfo">
-										<div class="inner wrapper">
+					<div class="footer-logo">
+						<a href="#"><img src="assets/images/citadines-logo-2.svg" alt="Citadines Footer Logo"></a>
+					</div>
+					<div class="footer-nav">
+						<ul class="list">
+							<li class="menu-item"><a href="location.html" class="link">Location</a></li>
+							<li class="menu-item"><a href="project-story.html" class="link">Project</a></li>
+							<li class="menu-item"><a href="investment-1.html" class="link">Investment Plan</a></li>
+							<li class="menu-item"><a href="units.html" class="link">Units</a></li>
+							<li class="menu-item"><a href="project-status.html" class="link">Project Status</a></li>
+							<li class="menu-item"><a href="contact.html" class="link">Sales Info & Contact</a></li>
+							<li class="menu-item"><a href="sitemap.html" class="link">Sitemap</a></li>
+						</ul>
+					</div>
+					<div class="footer-social">
+						<ul class="list">
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-facebook" /></svg></a></li>
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-twitter" /></svg></a></li>
+							<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-instagram" /></svg></a></li>
+						</ul>
+					</div>
+					<div class="copyright">
+						<p>&copy; <script>document.write((new Date()).getFullYear());</script> Citadines Berawa Beach Bali</p>
+						<p>developed by Genesis Indojaya</p>
+					</div>
 
-											<div class="footer-logo">
-												<a href="#"><img src="assets/images/citadines-logo-2.svg" alt="Citadines Footer Logo"></a>
-											</div>
-											<div class="footer-nav">
-												<ul class="list">
-													<li class="menu-item"><a href="location.html" class="link">Location</a></li>
-													<li class="menu-item"><a href="project-story.html" class="link">Project</a></li>
-													<li class="menu-item"><a href="investment-1.html" class="link">Investment Plan</a></li>
-													<li class="menu-item"><a href="units.html" class="link">Units</a></li>
-													<li class="menu-item"><a href="project-status.html" class="link">Project Status</a></li>
-													<li class="menu-item"><a href="contact.html" class="link">Sales Info & Contact</a></li>
-													<li class="menu-item"><a href="sitemap.html" class="link">Sitemap</a></li>
-												</ul>
-											</div>
-											<div class="footer-social">
-												<ul class="list">
-													<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-facebook" /></svg></a></li>
-													<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-twitter" /></svg></a></li>
-													<li class="menu-item"><a href="#" target="_blank"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-instagram" /></svg></a></li>
-												</ul>
-											</div>
-											<div class="copyright">
-												<p>&copy; <script>document.write((new Date()).getFullYear());</script> Citadines Berawa Beach Bali</p>
-												<p>developed by Genesis Indojaya</p>
-											</div>
+				</div>
+			</footer>
+		</div> <!-- #site-container -->
 
-										</div>
-									</footer>
-								</div> <!-- #site-container -->
-
-								<script src="assets/js/vendor.js"></script>
-								<script src="assets/js/bundle.js"></script>
+		<!--build:js assets/js/vendor.js -->
+		<script src="assets/js/vendor/svg4everybody.min.js"></script>
+		<script src="assets/js/vendor/stickyfill.min.js"></script>
+		<script src="assets/js/vendor/imagesloaded.min.js"></script>
+		<script src="assets/js/vendor/anime.min.js"></script>
+		<script src="assets/js/vendor/scrollMonitor.min.js"></script>
+		<script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/vendor/flickity.min.js"></script>
+		<script src="assets/js/vendor/masonry.min.js"></script>
+		<!-- endbuild -->
+		<!--build:js assets/js/bundle.js -->
+		<script src="assets/js/helper.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/style.js"></script>
+		<!-- endbuild -->
 	</body>
 </html> <!-- haunter owned! -->

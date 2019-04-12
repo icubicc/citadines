@@ -26,7 +26,7 @@
       .attraction-item {
         display: inline-table;
         padding: 12px;
-        margin-left: -4px;        
+        margin-left: -4px;
         align-items: center;
         width: 100%;
 
@@ -56,6 +56,124 @@
             margin-bottom: 0;
           }
         }
+      }
+    }
+  }
+}
+
+.tourism-statistic {
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #F1EFED;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+  }
+
+  @at-root {
+    .tourism-statistic-container {
+      background-color: #F1EFED;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+      }
+
+      .statistic-text {
+        width: 60%;
+        float: left;
+        padding-right: 80px;
+      }
+
+      .statistic-image {
+        width: 40%;
+        float: left;
+
+        .image {
+          padding-right: 48px;
+          margin-bottom: 48px;
+        }
+      }
+    }
+  }
+}
+
+.image-statistic-slider {
+  width: 100%;
+  position: relative;
+  transform: translateY(50%);
+  opacity: 0;
+  transition-property: transform,opacity;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-out;
+  padding-left: 64px;
+  left: auto;
+  margin-bottom: -48px;
+
+  &.in-viewport {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .slider-slides-container {
+    max-width: 660px;
+    position: relative;
+    margin-left: auto;
+
+    .flickity-slider {
+      transform: none !important;
+    }
+
+    .slides {
+
+      .slide {
+        width: 100%;
+        left: 0 !important;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+
+        &.is-selected {
+          opacity: 1;
+        }
+      }
+    }
+
+    .slider-nav {
+      display: flex;
+      position: absolute;
+      left: -48px;
+      top: 48px;
+
+      .left, .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        padding-top: 3px;
+      }
+
+      .left {
+        border-color: $color-one-500;
+        border-right: none;
+      }
+
+      .right {
+        border-color: $white;
+        border-left: none;
+        color: $white;
       }
     }
   }

@@ -1,54 +1,55 @@
 .page-hero {
   width: 100%;
+
   @at-root {
     .page-hero-image {
       display: block;
-      max-width: 1305px;
-      margin-right: auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+
+      &::before {
+        content: "";
+        display: block;
+        background-color: #F1EFED;
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+      }
 
       .wrapper {
+        max-width: 1425px;
         padding-left: 0;
-        margin: 0;
+        margin: 0 auto;
+        position: relative;
       }
     }
 
     .page-hero-title {
       display: block;
+      position: relative;
+
       &::before {
         content: "";
         display: block;
         background-color: #F1EFED;
-        height: 80px;
-        margin-top: -80px;
-      }
-
-      @media screen and (min-width: 640px) {
-        &::before {
-          height: 140px;
-          margin-top: -140px;
-        }
-      }
-
-      @media screen and (min-width: 800px) {
-        &::before {
-          height: 238px;
-          margin-top: -238px;
-        }
-      }
-
-      .wrapper {
-        padding-right: 0;
-        max-width: 100%;
-        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
       }
 
       .hero-title {
         max-width: 1280px;
+        margin: 0 auto;
         background-color: #F1EFED;
         padding: 38px;
-        margin-left: auto;
         display: flex;
         align-items: flex-end;
+        position: relative;
 
         @include breakpoint(walker) {
           padding: 48px;
@@ -58,7 +59,7 @@
           .title {
             margin-bottom: 18px;
           }
-  
+
           .subtitle {
             margin-bottom: 0;
             font-size: 18px;
@@ -106,7 +107,7 @@
 
       p {
         margin-bottom: 0;
-        
+
         &:not(:last-child) {
           margin-bottom: 24px;
         }
